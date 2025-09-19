@@ -1,0 +1,32 @@
+{
+  "name": "torrentctl-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "openapi": "swagger-typescript-api generate -p http://localhost:8080/v3/api-docs -o ./src/types -n Model.ts --extract-request-params  --no-client",
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "@types/node": "^24.3.0",
+    "axios": "^1.11.0",
+    "element-plus": "^2.11.1",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1",
+    "vxe-table": "^4.16.2"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.68",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.7.0",
+    "swagger-typescript-api": "^13.2.9",
+    "typescript": "~5.8.3",
+    "unocss": "^66.4.2",
+    "vite": "^7.1.2",
+    "vite-plugin-lazy-import": "^1.0.7",
+    "vue-tsc": "^3.0.5"
+  }
+}
